@@ -1,12 +1,10 @@
-import React from 'react'
+import Navbar from "./components/Navbar.JSx"
 
-export const App = () => {
+const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+    <>
+      <Navbar />
+    </>
   )
 }
 
