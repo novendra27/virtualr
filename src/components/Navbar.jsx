@@ -10,6 +10,17 @@ const Navbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen)
     }
 
+    const handleScroll = (e, targetId) => {
+        e.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    };
+
     return (
         <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/800">
             <div className="container px-4 mx-auto relative text-base">
@@ -45,7 +56,7 @@ const Navbar = () => {
                         <ul>
                             {navItems.map((item, index) => (
                                 <li key={index} className="py-4">
-                                    <a href={item.href}>{item.label}</a>
+                                    <a href={item.href} onClick={(e) => handleScroll(e, item.href)}>{item.label}</a>
                                 </li>
                             ))}
                         </ul>
