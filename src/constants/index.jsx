@@ -176,3 +176,11 @@ export const communityLinks = [
   { href: "#", text: "Hackathons" },
   { href: "#", text: "Jobs" },
 ];
+
+export const contactLinks = [
+  { href: "#", text: "Contact Us" },
+  { href: "#", text: "Support" },
+  { href: "https://www.instagram.com/adinovndra?igsh=MXJ1ZXRwZms0cm9zNA==", text: "Instagram" },
+  { href: "https://www.linkedin.com/in/adi-novendra/", text: "LinkedIn" },
+  { href: "https://github.com/novendra27/virtualr", text: "Github" },
+];
