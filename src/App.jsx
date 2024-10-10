@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar.JSx"
+import Navbar from "./components/Navbar.jsx"
 import HeroSection from "./components/HeroSection"
 import FeatureSection from "./components/FeatureSection"
 import Workflow from "./components/Workflow"
