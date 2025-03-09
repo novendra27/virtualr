@@ -33,7 +33,7 @@ const HeroSection = () => {
                 </div>
             </motion.div>
             {/* Video */}
-            <div className="flex mt-10 justify-center">
+            <div className="grid md:grid-cols-2 md:gap-6 gap-4 mt-10 justify-center">
                 <VideoContent srcVideo={video1} direction="left" />
                 <VideoContent srcVideo={video2} direction="right" />
             </div>
@@ -63,7 +63,7 @@ function VideoContent({ srcVideo, direction }) {
             autoPlay
             loop
             muted
-            className="rounded-lg w-1/2 border border-orange-700 shadow-orange-400 mx-2 my-4"
+            className="rounded-lg border border-orange-700 shadow-orange-400"
         >
             <source src={srcVideo} type="video/mp4" />
             Your browser does not support the video tag.
